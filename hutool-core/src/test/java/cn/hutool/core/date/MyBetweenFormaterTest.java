@@ -1,12 +1,14 @@
 package cn.hutool.core.date;
 
 import cn.hutool.core.date.BetweenFormater.Level;
-import org.junit.Assert;
-import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+/**
+ *
+ * Partitioned by level and MaxLevel
+ * **/
 public class MyBetweenFormaterTest {
     @ParameterizedTest(name = "{0}")
     @CsvSource({
@@ -23,6 +25,4 @@ public class MyBetweenFormaterTest {
         BetweenFormater formater = new BetweenFormater(betweenMs, Level.SECOND, levelMaxCount);
         Assertions.assertEquals(formater.toString(), expected);
     }
-
-
 }
