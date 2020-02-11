@@ -179,15 +179,10 @@ public class SqlBuilder implements Builder<String>{
 	 * @return 自己
 	 */
 	public SqlBuilder update(Entity entity) {
-		// 验证
 		validateEntity(entity);
-
 		if (null != wrapper) {
-			// 包装表名
-			// entity = wrapper.wrap(entity);
 			entity.setTableName(wrapper.wrap(entity.getTableName()));
 		}
-
 		sql.append("UPDATE ").append(entity.getTableName()).append(" SET ");
 		String field;
 		for (Entry<String, Object> entry : entity.entrySet()) {

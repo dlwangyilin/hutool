@@ -30,8 +30,6 @@ public class BitMapBloomFilterTest {
 			intMap.add(i);
 		}
 		intMap.remove(30);
-
-
 		for (int i = 0; i < 32; i++) {
 			System.out.println(i + "是否存在-->" + intMap.contains(i));
 		}
