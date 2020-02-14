@@ -19,7 +19,6 @@ public class StrBuilderTest {
 	 * StrBuilder的性能测试
 	 */
 	@Test
-	@Ignore
 	public void benchTest() {
 		TimeInterval timer = DateUtil.timer();
 		StrBuilder builder = StrBuilder.create();
