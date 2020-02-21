@@ -13,11 +13,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
-/**
- * StrBuilder单元测试
- * @author looly
- *
- */
 public class MyStrSpliterTest {
 
 	@Test
