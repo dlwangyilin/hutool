@@ -1,6 +1,8 @@
 language: java
 
-os: linux
+os: 
+  - linux
+  - windows
 
 install: true
 
