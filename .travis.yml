@@ -4,6 +4,9 @@ sudo: false # faster builds
 
 install: true
 
+before_install:
+  - chmod +x mvnw
+
 jdk:
   - openjdk8
   - oraclejdk8
